@@ -1,0 +1,84 @@
+.wrapper{
+    width: 45%;
+    margin-bottom: 20px;
+    min-width: 360px;
+    .header{
+        width: 97.3%;
+        background: #333;
+        color: white;
+        padding: 8px ;
+    }
+
+    
+
+    .text-pane{
+        padding: 0 5px;
+        margin: 0;
+        border: 1px solid black;
+    }
+
+    #editor{        
+        width: 98%;
+        height: 88vh;
+        resize: vertical;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.85em;
+    }
+
+    #preview{
+        width: 97.9%;
+        blockquote {
+            border-left: 3px solid #224B4B;
+            color: #224B4B;
+            padding-left: 5px;
+            margin-left: 25px;
+          }
+        
+          code {
+            background: white;
+            padding: 1px 4px 2px 4px;
+            font-size: 12px;
+            font-weight: bold;
+          }
+        
+          pre {
+            background: white;
+            padding: 5px 0 5px 5px;
+          }
+        
+          h1 {
+            border-bottom: 2px solid black;
+          }
+        
+          h2 {
+            border-bottom: 1px solid black;
+          }
+        
+          table {
+            border-collapse: collapse;
+          }
+        
+          td,
+          th {
+            border: 2px solid black;
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+    }
+
+    @media screen and(max-width: 1050px){
+        width: 90%;
+
+        .header{
+            padding-right: 0;
+            width: 99%;
+        }
+        #editor{
+            width:98.5%;
+        }
+
+        #preview{
+            width: 98.5%;
+        }
+    }
+}
